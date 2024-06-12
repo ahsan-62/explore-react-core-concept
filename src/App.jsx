@@ -4,24 +4,29 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Todo from './Todo.jsx'
 import Workmode from './Workmode.jsx'
+import Actor from './Actor.jsx'
 
 function App() {
 
+  const actors=['Ahsan','Ahmed','Ali','Asad'];
   return (
     <>
-      <h1>Vite + React</h1>
+      {/* <h1>Vite + React</h1>
       <Todo task="Learn React" isOn={true}>  </Todo>
       <Todo task="Learn Django" isOn={false}>  </Todo>
       <Todo task="Learn Laravel" isOn={true}>  </Todo>
 
       <Workmode task="Learn React" isOn={true} ></Workmode>
-      <Workmode task="Learn Django" isOn={false} ></Workmode>
+      <Workmode task="Learn Django" isOn={false} ></Workmode> */}
       {/* <Ahsan/>
       <Ahsan2>  </Ahsan2>
       <Developer name="Laravel" salary="10000" ></Developer>
       <Developer name="Node JS" salary="5000" ></Developer>
       <Developer name="Django" salary="9500" ></Developer>
       <MakeMoney name={['Laravel','Node JS','Django']}></MakeMoney> */}
+
+      <Actor name="Jun Al Ahsan" ></Actor>
+     {actors.map(actor=><Actor name={actor} ></Actor>)}
       
     </>
   )

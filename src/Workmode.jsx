@@ -4,4 +4,4 @@ export default function Workmode({task,isOn}){
         <li>{isOn ? "Hello" : "Bye"} I am in work mode</li>
     )
 
-}
+}  
