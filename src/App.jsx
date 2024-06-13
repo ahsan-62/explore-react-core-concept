@@ -9,6 +9,16 @@ import Actor from './Actor.jsx'
 function App() {
 
   const actors=['Ahsan','Ahmed','Ali','Asad'];
+
+  const myObject=[
+    
+    {name:"Fariha Tajnin Afsin",age:12},
+    {name:"Ahsan",age:22},
+    {name:"Ahmed",age:24},
+    {name:"Ali",age:26},
+    {name:"Asad",age:28}
+  ]
+  
   return (
     <>
       {/* <h1>Vite + React</h1>
@@ -25,8 +35,8 @@ function App() {
       <Developer name="Django" salary="9500" ></Developer>
       <MakeMoney name={['Laravel','Node JS','Django']}></MakeMoney> */}
 
-      <Actor name="Jun Al Ahsan" ></Actor>
-     {actors.map(actor=><Actor name={actor} ></Actor>)}
+      {/* <Actor name="Jun Al Ahsan" ></Actor> */}
+     {myObject.map(actor=><Actor actorDetails={actor} ></Actor>)}
       
     </>
   )
